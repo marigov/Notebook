@@ -8,7 +8,7 @@ from random import randint
 from notes.forms import CreateNoteForm
 from .views import profile
 import unittest
-from selenium import webdriver
+#from selenium import webdriver
 
 class Tests(TestCase):
     def setUp(self):
@@ -96,35 +96,35 @@ class Tests(TestCase):
 
 
 
-class UserRegister(TestCase):
-
-    def setUp(self):
-        webdriver.driver = webdriver.PhantomJS()
-        webdriver.driver.set_window_size(1120, 550)
-        webdriver.driver.get("http://127.0.0.1:8000/signup/")
-
-    def test(self):
-        username = webdriver.driver.find_element_by_id("id_username")
-        first_name = webdriver.driver.find_element_by_id("id_first_name")
-        last_name = webdriver.driver.find_element_by_id("id_last_name")
-        email = webdriver.driver.find_element_by_id("id_email")
-        password_1 = webdriver.driver.find_element_by_id("id_password1")
-        password_2 = webdriver.driver.find_element_by_id("id_password2")
-
-        username.send_keys("username1234"+str(randint(0,1000)))
-        first_name.send_keys("Miquel")
-        last_name.send_keys("Rigo")
-        email.send_keys("marigov@mac.com")
-        password_1.send_keys("miquel1234.")
-        password_2.send_keys("miquel1234.")
-
-        webdriver.driver.find_element_by_id("id_submit").submit()
-        webdriver.driver.get("http://127.0.0.1:8000/")
-        self.assertEquals(webdriver.driver.current_url,"http://127.0.0.1:8000/")
-
-    def tearDown(self):
-
-        webdriver.driver.quit()
-
-if __name__ == '__main__':
-    unittest.main()
+# class UserRegister(TestCase):
+# 
+#     def setUp(self):
+#         webdriver.driver = webdriver.PhantomJS()
+#         webdriver.driver.set_window_size(1120, 550)
+#         webdriver.driver.get("http://127.0.0.1:8000/signup/")
+#
+#     def test(self):
+#         username = webdriver.driver.find_element_by_id("id_username")
+#         first_name = webdriver.driver.find_element_by_id("id_first_name")
+#         last_name = webdriver.driver.find_element_by_id("id_last_name")
+#         email = webdriver.driver.find_element_by_id("id_email")
+#         password_1 = webdriver.driver.find_element_by_id("id_password1")
+#         password_2 = webdriver.driver.find_element_by_id("id_password2")
+#
+#         username.send_keys("username1234"+str(randint(0,1000)))
+#         first_name.send_keys("Miquel")
+#         last_name.send_keys("Rigo")
+#         email.send_keys("marigov@mac.com")
+#         password_1.send_keys("miquel1234.")
+#         password_2.send_keys("miquel1234.")
+#
+#         webdriver.driver.find_element_by_id("id_submit").submit()
+#         webdriver.driver.get("http://127.0.0.1:8000/")
+#         self.assertEquals(webdriver.driver.current_url,"http://127.0.0.1:8000/")
+#
+#     def tearDown(self):
+#
+#         webdriver.driver.quit()
+#
+# if __name__ == '__main__':
+#     unittest.main()
