@@ -60,7 +60,7 @@ def UpdateNote(request, pk):
             myNote.content = form.cleaned_data['content']
             myNote.save()
         return redirect("/")
-    return render(request, 'notes/update_note.htmL', {'form':form, "note":myNote})
+    return render(request, 'notes/update_note.html', {'form':form, "note":myNote})
 
 def signup(request):
     if request.method == 'POST':
