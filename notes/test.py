@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from django.contrib.auth.models import User
 from django.test import RequestFactory
 from django.test import TestCase
@@ -18,7 +20,7 @@ class Tests(TestCase):
         User.objects.create_user(**self.credentials)
         self.factory = RequestFactory()
         self.user = User.objects.create_user(
-            username='jacob', email='jacob…', password='top_secret')
+            username='jacob', email='jacob@…', password='top_secret')
 
     def testLogin(self):
 
