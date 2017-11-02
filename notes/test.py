@@ -18,7 +18,7 @@ class Tests(TestCase):
         User.objects.create_user(**self.credentials)
         self.factory = RequestFactory()
         self.user = User.objects.create_user(
-            username='jacob', email='jacob@…', password='top_secret')
+            username='jacob', email='jacob…', password='top_secret')
 
     def testLogin(self):
 
@@ -97,7 +97,7 @@ class Tests(TestCase):
 
 
 # class UserRegister(TestCase):
-# 
+#
 #     def setUp(self):
 #         webdriver.driver = webdriver.PhantomJS()
 #         webdriver.driver.set_window_size(1120, 550)
