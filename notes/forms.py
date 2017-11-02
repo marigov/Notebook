@@ -27,3 +27,5 @@ class NotesSearchForm(forms.Form):
         # widget=forms.TextInput(attrs={'placeholder': 'search here!'})
     )
 
+
+
