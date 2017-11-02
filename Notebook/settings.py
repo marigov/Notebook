@@ -71,7 +71,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'Notebook.wsgi.application'
 
 
-# Database
+# Databases
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DEPLOY = True
