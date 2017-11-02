@@ -6,6 +6,7 @@ from django.test import TestCase
 from django.contrib.auth.forms import UserCreationForm
 from .forms import CreateNoteForm,SignUpForm, NotesSearchForm
 from random import randint
+from django.test import LiveServerTestCase
 
 from notes.forms import CreateNoteForm
 from .views import profile
@@ -94,8 +95,8 @@ class Tests(TestCase):
             'password2': "miquel1234",
             "email": "marigov@mac.com",
         })
+        self.selenium = webdriver.Chrome()
         self.assertFalse(form.is_valid())
-
 
 
 # class UserRegister(TestCase):
