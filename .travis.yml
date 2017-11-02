@@ -5,11 +5,6 @@ services: # => 3
   - mysql
 env: # => 4
   - DJANGO=1.10.11 DB=mysql
-before_install:
-  - curl -L https://chromedriver.storage.googleapis.com/2.32/chromedriver_linux64.zip -o chromedriver.zip
-  - sudo mkdir -p /usr/local/bin/
-  - sudo unzip chromedriver.zip -d /usr/local/bin/
-  - sudo chmod +x /usr/local/bin/chromedriver
 install: # => 5
   - pip install -r requirements.txt
 script: # => 7

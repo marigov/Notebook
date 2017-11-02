@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 from django.contrib.auth.models import User
 from django.test import RequestFactory
 from django.test import TestCase
@@ -97,8 +96,6 @@ class Tests(TestCase):
         })
         #self.selenium = webdriver.Chrome()
         self.assertFalse(form.is_valid())
-
-
 # class UserRegister(TestCase):
 #
 #     def setUp(self):
