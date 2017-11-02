@@ -29,7 +29,7 @@
                         href="{% url "notes:update_note" pk=note.pk %}">{{ note.title }}</a></h3></div>
 
                         <div class="col-md-6"><div style="text-align: right"><h5 class="panel-title"><a
-                                href="{% url "notes:update_note" pk=note.pk %}">{{ note.user }} | {{ note.dateAndTime.date }}, {{ note.dateAndTime.hour }}:{{ note.dateAndTime.minute }}</a></h5></div></div>
+                                href="{% url "notes:update_note" pk=note.pk %}">{{ note.user }} | {{ note.dateAndTime.date }} at {{ note.dateAndTime.time }}</a></h5></div></div>
                     </div>
                 </div>
                 <div class="panel-body">
