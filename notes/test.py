@@ -10,7 +10,7 @@ from random import randint
 from notes.forms import CreateNoteForm
 from .views import profile
 import unittest
-#from selenium import webdriver
+from selenium import webdriver
 
 class Tests(TestCase):
     def setUp(self):
