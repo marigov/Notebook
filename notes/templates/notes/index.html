@@ -23,8 +23,14 @@
     <div class="col-md-12">
         {% for note in object_list %}
             <div class="panel panel-default">
-                <div class="panel-heading" style="font-size: 16px"><h3 class="panel-title"><a
-                        href="{% url "notes:update_note" pk=note.pk %}">{{ note.title }}</a></h3>
+                <div class="panel-heading" style="font-size: 16px">
+                    <div class="row">
+                        <div class="col-md-6"><h3 class="panel-title"><a
+                        href="{% url "notes:update_note" pk=note.pk %}">{{ note.title }}</a></h3></div>
+
+                        <div class="col-md-6"><div style="text-align: right"><h5 class="panel-title"><a
+                                href="{% url "notes:update_note" pk=note.pk %}">{{ note.user }} | {{ note.dateAndTime.date }}, {{ note.dateAndTime.hour }}:{{ note.dateAndTime.minute }}</a></h5></div></div>
+                    </div>
                 </div>
                 <div class="panel-body">
                     {{ note.content }}
