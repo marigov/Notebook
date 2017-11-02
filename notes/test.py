@@ -11,7 +11,7 @@ from django.test import LiveServerTestCase
 from notes.forms import CreateNoteForm
 from .views import profile
 import unittest
-from selenium import webdriver
+#from selenium import webdriver
 
 class Tests(TestCase):
     def setUp(self):
@@ -95,7 +95,7 @@ class Tests(TestCase):
             'password2': "miquel1234",
             "email": "marigov@mac.com",
         })
-        self.selenium = webdriver.Chrome()
+        #self.selenium = webdriver.Chrome()
         self.assertFalse(form.is_valid())
 
 
