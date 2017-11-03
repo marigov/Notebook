@@ -72,7 +72,7 @@ WSGI_APPLICATION = 'Notebook.wsgi.application'
 
 
 # Databases
-# https://docs.djangoproject.com/en/1.11/ref/settings/#databasess
+# https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DEPLOY = False
 
