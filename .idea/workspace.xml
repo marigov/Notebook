@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0200f66-a231-49e9-80de-6a97188c2aee" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Notebook/settings.py" afterPath="$PROJECT_DIR$/Notebook/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notes/templates/notes/login.html" afterPath="$PROJECT_DIR$/notes/templates/notes/login.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,18 +24,28 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notes/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
+            <state relative-caret-position="118">
               <caret line="62" column="50" lean-forward="false" selection-start-line="62" selection-start-column="50" selection-end-line="62" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="signup.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/notes/templates/notes/signup.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/notes/templates/notes/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+            <state relative-caret-position="360">
+              <caret line="20" column="57" lean-forward="false" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -50,7 +61,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Notebook/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="283">
@@ -93,7 +104,6 @@
         <option value="$PROJECT_DIR$/notes/templates/notes/create_note.html" />
         <option value="$PROJECT_DIR$/notes/templates/notes/base.html" />
         <option value="$PROJECT_DIR$/notes/templates/notes/signup.html" />
-        <option value="$PROJECT_DIR$/notes/templates/notes/login.html" />
         <option value="$PROJECT_DIR$/notes/urls.py" />
         <option value="$PROJECT_DIR$/notes/templates/notes/update_note.html" />
         <option value="$PROJECT_DIR$/notes/forms.py" />
@@ -103,6 +113,7 @@
         <option value="$PROJECT_DIR$/notes/views.py" />
         <option value="$PROJECT_DIR$/notes/templates/notes/index.html" />
         <option value="$PROJECT_DIR$/Notebook/settings.py" />
+        <option value="$PROJECT_DIR$/notes/templates/notes/login.html" />
       </list>
     </option>
   </component>
@@ -618,7 +629,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/notes/templates/notes/profile.html" />
-    <entry file="file://$PROJECT_DIR$/notes/templates/notes/signup.html" />
     <entry file="file://$PROJECT_DIR$/notes/templates/notes/create_note.html" />
     <entry file="file://$PROJECT_DIR$/notes/templates/notes/base.html" />
     <entry file="file://$PROJECT_DIR$/notes/templates/notes/update_note.html" />
@@ -628,22 +638,6 @@
     <entry file="file://$PROJECT_DIR$/notes/functional_tests.py" />
     <entry file="file://$PROJECT_DIR$/notes/urls.py" />
     <entry file="file://$PROJECT_DIR$/notes/test.py" />
-    <entry file="file://$PROJECT_DIR$/notes/templates/notes/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notes/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="62" column="50" lean-forward="false" selection-start-line="62" selection-start-column="50" selection-end-line="62" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/notes/templates/notes/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
@@ -656,6 +650,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
           <caret line="74" column="63" lean-forward="false" selection-start-line="74" selection-start-column="63" selection-end-line="74" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="62" column="50" lean-forward="false" selection-start-line="62" selection-start-column="50" selection-end-line="62" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes/templates/notes/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes/templates/notes/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="57" lean-forward="false" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
           <folding />
         </state>
       </provider>
